@@ -1,6 +1,6 @@
 
 def is_palindrome(text):
-    return text == reversed(text)
+    return text == text[::-1]
 
 
 
