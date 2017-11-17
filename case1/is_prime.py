@@ -1,8 +1,12 @@
+
 def is_prime(number):
     """
     Checks a number is a prime or not.
     Returns bool.
     """
+    if number < 0:
+        raise ValueError("Negative numbers are not supported.")
+
     if number < 2:
         return False
     for i in range(2, number):
